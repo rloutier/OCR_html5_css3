@@ -1,6 +1,22 @@
+body{
+    /* une idée de la correction : on met "la base" sur le sélecteur body, cad le + général, comme
+    ça on ne définit que les **déviations** */
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    color: #A5B4FC;
+}
+p {
+    font-size: 1.1em;
+}
 a {
+    text-decoration: none;
     color: black;
 }
-.tres-special{
+em {
+    font-style: normal;
     color: #A5B4FC;
 }
