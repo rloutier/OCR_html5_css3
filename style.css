@@ -3,6 +3,8 @@ body{
     ça on ne définit que les **déviations** */
     font-family: 'Manrope', sans-serif;
     font-size: 1em;
+    color: #F9F8FF;
+    background-color: #1F2039;
 }
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -14,9 +16,17 @@ p {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #242424;
 }
 em {
     font-style: normal;
     color: #A5B4FC;
+}
+.header,
+.footer{
+    background-color: white;
+}
+.cta{
+    color: white;
+    background: linear-gradient(#8E86B5,#ACAEED);
 }
