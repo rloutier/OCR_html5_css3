@@ -29,4 +29,9 @@ em {
 .cta{
     color: white;
     background: linear-gradient(#8E86B5,#ACAEED);
+    border-radius: 50px;
+}
+.a-propos{
+    border-right: #8E86B5 1px solid;
+    border-bottom: #8E86B5 1px solid;
 }
