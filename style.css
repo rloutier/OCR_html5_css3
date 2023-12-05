@@ -18,6 +18,9 @@ a {
     text-decoration: none;
     color: #242424;
 }
+a.u-link:hover {
+    text-decoration: underline;
+}
 em {
     font-style: normal;
     color: #A5B4FC;
@@ -26,12 +29,19 @@ em {
 .footer{
     background-color: white;
 }
-.cta{
+a.cta{
     color: white;
     background: linear-gradient(#8E86B5,#ACAEED);
     border-radius: 50px;
 }
+a.cta:hover{
+    background: linear-gradient(#696484, #8788BA);
+}
 .a-propos{
     border-right: #8E86B5 1px solid;
     border-bottom: #8E86B5 1px solid;
+}
+.header a img:hover,
+.footer a img:hover{
+    opacity: 0.5;
 }
