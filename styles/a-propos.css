@@ -1,0 +1,38 @@
+.a-propos-intro {
+    width: 60%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.a-propos-border {
+    border-right: #8E86B5 1px solid;
+    border-bottom: #8E86B5 1px solid;
+    padding: 0 50px 50px 50px;
+}
+.a-propos-border h2 {
+    margin-bottom: 0.5em;
+}
+.a-propos-border + div {
+    text-align: center;
+}
+.a-propos-intro + section {
+    padding-top: 0;
+}
+h2#tarifs {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 60%;
+}
+td, th {
+    border: #8E86B5 1px solid;
+}
+td {
+    text-align: center;
+    padding: 3em;
+}
+th {
+    padding: 1em;
+}
