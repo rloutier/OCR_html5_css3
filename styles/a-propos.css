@@ -1,0 +1,13 @@
+.a-propos-intro {
+    width: 60%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.a-propos-border {
+    border-right: #8E86B5 1px solid;
+    border-bottom: #8E86B5 1px solid;
+    padding: 0 50px 50px 50px;
+}
+.a-propos-border h2 {
+    margin-bottom: 0.5em;
+}
