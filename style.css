@@ -37,7 +37,7 @@ a {
 }
 nav a:not(:has(img)):hover {
     text-decoration: underline;
-    top: -3px;
+    top: 3px;
 }
 a.cta {
     color: white;
