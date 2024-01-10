@@ -25,18 +25,27 @@
 .portfolio-photos [class|="grid"] a {
     position: relative;
 }
-.portfolio-photos [class|="grid"] a:hover::before {
+.portfolio-photos [class|="grid"] a::before {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     content: "Voir la photo";
+    transition: opacity 0.125s ease-in;
+    transition-delay: 0s;
+    transition-property: all;
+    opacity: 0;
+}
+.portfolio-photos [class|="grid"] a:hover::before {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 1s;
+    transition-property: all;
 }
 /* Une methode + simple que ::before consisterait à ajouter un div
 avec chaque img dans le lien, avec un display=none par default, et

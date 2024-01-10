@@ -24,3 +24,27 @@
     flex-wrap: wrap;
     gap: 5px;
 }
+h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+input, textarea {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    color: #242424;
+    padding: 15px;
+    border-radius: 5px;
+    border-width: 0;
+}
+form {
+    display: grid;
+    grid-template : repeat(5, auto) / repeat(2, 1fr) ;
+    gap: 10px;
+}
+#lbl-message, #message, #envoyer{
+    grid-column: span 2;
+}
+#envoyer {
+    justify-self: center;
+    width: 200px;
+}
