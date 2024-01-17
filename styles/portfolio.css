@@ -52,3 +52,8 @@ avec chaque img dans le lien, avec un display=none par default, et
 dans une classe similaire a celle ci-dessus, qqch co
 .portfolio-photos [class|="grid"] a:hover div {
 le basculer à display=flex */
+@media screen and (max-width: 996px) {
+    .portfolio-photos [class|="grid"] {
+        grid-template: none;
+    }
+}

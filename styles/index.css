@@ -1,5 +1,5 @@
 .index-intro {
-    width: 60%;
+    max-width: 1000px;
     box-sizing: border-box;
     margin: auto;
 }
@@ -21,8 +21,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 h2 {
     text-align: center;
@@ -34,12 +35,14 @@ input, textarea {
     color: #242424;
     padding: 15px;
     border-radius: 5px;
-    border-width: 0;
+    border: none;
 }
 form {
     display: grid;
     grid-template : repeat(5, auto) / repeat(2, 1fr) ;
     gap: 10px;
+    max-width: 700px;
+    margin: auto;
 }
 #lbl-message, #message, #envoyer{
     grid-column: span 2;
@@ -47,4 +50,22 @@ form {
 #envoyer {
     justify-self: center;
     width: 200px;
+}
+@media screen and (max-width: 996px) {
+    .index-intro > div {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    .index-intro > div img {width: 100%;}
+    .index-intro > div div {text-align: center;}
+
+    .index-photos div {flex-direction: column;}
+
+    form { grid-template: none; }
+    #lbl-email, #email {order:1}
+    #lbl-message, #message, #envoyer{
+        grid-column: unset;
+        order: 2;
+    }
 }

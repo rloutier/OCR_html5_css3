@@ -17,7 +17,7 @@
 .a-propos-intro + section {
     padding-top: 0;
 }
-h2#tarifs {
+h2#tarifs-title {
     text-align: center;
     margin-bottom: 1.5em;
 }
@@ -35,4 +35,8 @@ td {
 }
 th {
     padding: 1em;
+}
+@media screen and (max-width:996px) {
+    #tarifs-section {display: none;}
+    .a-propos-intro {width: 90%;}
 }
